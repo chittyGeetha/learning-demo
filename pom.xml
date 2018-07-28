@@ -6,12 +6,19 @@
     <groupId>com.philips.helloworld</groupId>
     <artifactId>helloworld</artifactId>
     <version>0.1.0-SNAPSHOT</version>
+    
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.8.RELEASE</version>
     </parent>
+    <distributionManagement>
+<Repository>
+<id>nexus</id>
+<url>http://localhost:8081/#browse/browse:maven-snapshots</url>
+</Repository>
+</distributionManagement>
 
     <dependencies>
         <dependency>
